@@ -1,3 +1,68 @@
 label {
     text-transform: uppercase;
+    font-weight: bold;
+}
+label, input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: .3rem;
+    border-radius: 6px;
+}
+input, select, textarea {
+    border-color: #ccc;
+    border-style: solid;
+}
+main {
+    padding: 1rem;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2, h3 {
+    color: red;
+}
+form div {
+    margin-bottom: 1rem;
+}
+
+fieldset input, fieldset label, [type="submit"] {
+    display: unset;
+    width: unset;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+[type="submit"] {
+    border: 0;
+    background-color: unset;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: margin-left 1.5s;
+}
+[type="submit"]:hover {
+    color: red;
+    margin-left: 1.5rem;
+}
+textarea {
+    height: 120px;
+}
+
+@media(min-width: 700px) {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    form div {
+        width: calc(50% - .5rem);
+        /* width: calc((100% - 1rem) / 2); */
+    }
+    form h3 {
+        width: 100%;
+    }
 }
